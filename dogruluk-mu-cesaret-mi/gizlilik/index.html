@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gizlilik Politikası – Doğruluk mu Cesaret mi?</title>
+<meta name="description" content="Doğruluk mu Cesaret mi? uygulamasının gizlilik politikası / Privacy policy for the Truth or Dare app by XanApps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #150d24;
+    --panel: #1f1535;
+    --ink: #f3eefb;
+    --muted: #b7abcf;
+    --pink: #ec4899;
+    --violet: #8b5cf6;
+    --orange: #f97316;
+    --rule: #34284d;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #faf7ff;
+      --panel: #ffffff;
+      --ink: #221836;
+      --muted: #5f5378;
+      --rule: #e6def3;
+      color-scheme: light;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+  header { text-align: center; margin-bottom: 2rem; }
+  .bubble {
+    display: inline-block;
+    position: relative;
+    padding: 1.1rem 1.6rem 1rem;
+    border-radius: 1.4rem;
+    border: 3px solid transparent;
+    background:
+      linear-gradient(var(--panel), var(--panel)) padding-box,
+      linear-gradient(135deg, var(--violet), var(--pink) 55%, var(--orange)) border-box;
+  }
+  .bubble::after {
+    content: "";
+    position: absolute;
+    left: 22%;
+    bottom: -14px;
+    width: 22px; height: 22px;
+    background: var(--panel);
+    border-right: 3px solid var(--pink);
+    border-bottom: 3px solid var(--pink);
+    transform: rotate(45deg);
+  }
+  .bubble h1 {
+    margin: 0;
+    font: 800 clamp(1.5rem, 5vw, 2rem)/1.15 "Baloo 2", "Nunito", sans-serif;
+  }
+  .bubble p { margin: .2rem 0 0; color: var(--muted); font-size: .95rem; }
+
+  .lang {
+    display: inline-flex;
+    gap: .25rem;
+    margin-top: 1.75rem;
+    padding: .25rem;
+    border-radius: 999px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+  }
+  .lang button {
+    font: 700 .9rem "Nunito", sans-serif;
+    color: var(--muted);
+    background: none;
+    border: 0;
+    padding: .45rem 1.1rem;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] {
+    color: #fff;
+    background: linear-gradient(90deg, var(--violet), var(--pink));
+  }
+  .lang button:focus-visible, a:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+  article + article { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+  .js article[hidden] { display: none; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 1.5rem; }
+  h2 {
+    font: 700 1.3rem/1.3 "Baloo 2", "Nunito", sans-serif;
+    margin: 2rem 0 .5rem;
+  }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--pink); text-underline-offset: 3px; }
+  .summary {
+    background: var(--panel);
+    border-left: 4px solid var(--violet);
+    border-radius: .6rem;
+    padding: 1rem 1.2rem;
+    margin: 0 0 1rem;
+  }
+  .summary p { margin: 0; }
+  footer { margin-top: 3rem; text-align: center; color: var(--muted); font-size: .9rem; }
+
+  .switch { margin-top: 1.5rem; font-weight: 700; }
+  .switch a { text-decoration: none; padding: .45rem 1.1rem; border-radius: 999px; border: 1px solid var(--rule); background: var(--panel); display: inline-block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="bubble">
+      <h1>Doğruluk mu Cesaret mi?</h1>
+      <p>Gizlilik Politikası</p>
+    </div>
+    <div class="switch"><a href="/dogruluk-mu-cesaret-mi/privacy/" hreflang="en">English</a></div>
+  </header>
+
+  <article id="tr" lang="tr">
+    <p class="date">Son güncelleme: 25 Eylül 2026</p>
+
+    <div class="summary">
+      <p>Kısaca: Uygulama hesap istemez, senin hakkında bilgi toplayıp bize göndermez. Oyuncu adları ve ayarlar yalnızca telefonunda kalır. Uygulamadaki reklamları Google AdMob gösterir ve Google, reklam için bazı cihaz bilgilerini kendi politikasına göre işler.</p>
+    </div>
+
+    <p>Bu politika, XanApps (Gökhan Eksan) tarafından geliştirilen “Doğruluk mu Cesaret mi?” mobil uygulamasının (“Uygulama”) hangi bilgileri nasıl kullandığını açıklar.</p>
+
+    <h2>Cihazında saklanan bilgiler</h2>
+    <p>Oyuna eklediğin oyuncu adları, seçtiğin oyun modu ve ayarlar yalnızca cihazının hafızasında saklanır. Bu bilgiler bize ya da başka bir sunucuya gönderilmez. Uygulamayı sildiğinde bu bilgiler de silinir.</p>
+
+    <h2>Toplamadığımız bilgiler</h2>
+    <p>Uygulama hesap oluşturmanı istemez. Adın, e-posta adresin, telefon numaran, konumun, rehberin, fotoğrafların veya mikrofonun gibi kişisel bilgilere erişmez ve bunları toplamaz. Kendi analiz veya takip sistemimiz yoktur.</p>
+
+    <h2>Reklamlar (Google AdMob)</h2>
+    <p>Uygulama ücretsizdir ve Google’ın reklam hizmeti AdMob aracılığıyla reklam gösterir. Reklamların gösterilebilmesi ve ölçülebilmesi için Google şu bilgileri toplayabilir ve işleyebilir:</p>
+    <ul>
+      <li>Cihazının reklam kimliği (Android Reklam Kimliği veya iOS IDFA, izin verdiysen)</li>
+      <li>IP adresi ve yaklaşık konum (IP adresinden tahmin edilen ülke/şehir düzeyinde)</li>
+      <li>Cihaz modeli, işletim sistemi ve dil gibi teknik bilgiler</li>
+      <li>Reklamlarla etkileşimin (gösterim ve tıklama bilgileri)</li>
+    </ul>
+    <p>Bu veriler doğrudan Google tarafından, Google’ın kendi politikalarına göre işlenir; bize kişisel olarak seni tanımlayan bir bilgi ulaşmaz. Ayrıntılar için: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google’ın iş ortaklarının sitelerini veya uygulamalarını kullandığınızda verileri nasıl kullandığı</a>.</p>
+
+    <h2>Onay ve takip izni</h2>
+    <ul>
+      <li><strong>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre:</strong> Bu bölgelerdeki kullanıcılara, Google’ın onay yönetim aracıyla kişiselleştirilmiş reklamlar için onay formu gösterilir. Onay vermezsen yalnızca kişiselleştirilmemiş reklamlar gösterilir.</li>
+      <li><strong>iOS:</strong> Uygulama, reklam kimliğine erişmek için Apple’ın “Uygulama Takip Şeffaflığı” izni ister. İzin vermesen de Uygulama’yı tam olarak kullanabilirsin; bu durumda daha az kişiselleştirilmiş reklamlar görürsün.</li>
+      <li><strong>Android:</strong> Reklam kimliğini telefonunun Ayarlar &gt; Google &gt; Reklamlar (veya Gizlilik &gt; Reklamlar) bölümünden sıfırlayabilir ya da silebilirsin.</li>
+    </ul>
+
+    <h2>Uygulama güncellemeleri</h2>
+    <p>Uygulama, küçük güncellemeleri Expo (650 Industries, Inc.) sunucularından indirebilir. Bu sırada güncellemenin sunulabilmesi için IP adresi, platform ve uygulama sürümü gibi teknik bilgiler işlenebilir. Bu bilgiler seni tanımlamak için kullanılmaz.</p>
+
+    <h2>Yaş sınırı</h2>
+    <p>Uygulama yetişkinlere yönelik sorular ve görevler içerir ve 18 yaş ve üzeri kullanıcılar içindir. 18 yaşından küçüklere yönelik değildir ve bu yaş grubundan bilerek bilgi toplamaz. Uygulamada gösterilen reklamlar, içerik derecelendirmesi en fazla “Genç (T)” olacak şekilde sınırlandırılmıştır.</p>
+
+    <h2>Hakların</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli olduğu durumlarda Avrupa Genel Veri Koruma Tüzüğü (GDPR) kapsamında haklarına sahipsin. Biz kişisel verini saklamadığımız için, cihazındaki bilgileri Uygulama’yı silerek kaldırabilirsin. Reklam verileriyle ilgili taleplerin için Google’ın gizlilik araçlarını kullanabilir veya bizimle iletişime geçebilirsin.</p>
+
+    <h2>Değişiklikler</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayınlanır ve üstteki tarih değişir.</p>
+
+    <h2>İletişim</h2>
+    <p>Sorun veya talebin için: <a href="mailto:gexan8@gmail.com">gexan8@gmail.com</a><br>Geliştirici: XanApps (Gökhan Eksan) – <a href="https://xanapps.com" target="_blank" rel="noopener">xanapps.com</a></p>
+  </article>
+
+  <footer>© 2026 XanApps</footer>
+</div>
+</body>
+</html>

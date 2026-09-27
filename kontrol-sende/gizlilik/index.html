@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gizlilik Politikası – Kontrol Sende</title>
+<meta name="description" content="Kontrol Sende uygulamasının gizlilik politikası / Privacy policy for the Kontrol Sende app by XanApps.">
+<link rel="alternate" hreflang="en" href="https://xanapps.com/kontrol-sende/privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --panel: #ffffff;
+    --ink: #15181d;
+    --muted: #5d6874;
+    --accent: #a85a1c;
+    --accent-soft: #f2a660;
+    --rose: #9e5a66;
+    --rule: #e3e7eb;
+    --glow-a: rgba(242,166,96,0.28);
+    --glow-b: rgba(199,216,223,0.6);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171b;
+      --panel: #1d2126;
+      --ink: #f1f3f5;
+      --muted: #a3adb5;
+      --accent: #f5b274;
+      --accent-soft: #f5b274;
+      --rose: #e3aeb6;
+      --rule: #2b3037;
+      --glow-a: rgba(245,178,116,0.12);
+      --glow-b: rgba(43,58,66,0.7);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(40rem 26rem at -10% -8%, var(--glow-b), transparent 70%),
+      radial-gradient(30rem 22rem at 110% 18%, var(--glow-a), transparent 70%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--ink);
+    font: 500 16.5px/1.7 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+
+  header { margin-bottom: 2rem; }
+  .eyebrow {
+    margin: 0 0 .4rem;
+    color: var(--accent);
+    font: 800 .78rem/1 "Manrope", sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font: 700 clamp(2.1rem, 8vw, 2.8rem)/1.1 "Fraunces", Georgia, serif;
+    letter-spacing: -.01em;
+  }
+  .tagline {
+    margin: .5rem 0 0;
+    color: var(--rose);
+    font: italic 600 1.05rem/1.4 "Fraunces", Georgia, serif;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-top: 1.5rem;
+  }
+  .date { margin: 0; color: var(--muted); font-size: .9rem; }
+  .switch {
+    font-weight: 800;
+    font-size: .88rem;
+    text-decoration: none;
+    color: var(--ink);
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+  }
+
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 6px 24px rgba(20,24,29,.06);
+  }
+  .summary strong { color: var(--accent); }
+  .summary p { margin: 0; }
+
+  h2 {
+    font: 700 1.3rem/1.3 "Fraunces", Georgia, serif;
+    margin: 2.2rem 0 .5rem;
+  }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  li::marker { color: var(--accent-soft); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, .switch:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Gizlilik Politikası</p>
+    <h1>Kontrol Sende 🗝️</h1>
+    <p class="tagline">Kontrol ettiğini işaretle, sonra aklın rahat etsin</p>
+    <div class="meta">
+      <p class="date">Son güncelleme: 27 Eylül 2026</p>
+      <a class="switch" href="/kontrol-sende/privacy/" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <p><strong>Kısaca:</strong> Uygulama hesap istemez ve senin hakkında bilgi toplayıp bize göndermez. Kontrol listelerin, işaretlerin ve ayarların yalnızca telefonunda kalır. Hatırlatıcılar telefonunun kendi bildirim sistemiyle kurulur. Uygulamadaki reklamları Google AdMob gösterir; Google, reklam için bazı cihaz bilgilerini kendi politikasına göre işler.</p>
+    </div>
+
+    <p>Bu politika, XanApps (Gökhan Eksan) tarafından geliştirilen “Kontrol Sende” mobil uygulamasının (“Uygulama”) hangi bilgileri nasıl kullandığını açıklar.</p>
+
+    <h2>Cihazında saklanan bilgiler</h2>
+    <p>Aşağıdaki bilgiler yalnızca cihazının hafızasında saklanır; bize ya da başka bir sunucuya gönderilmez:</p>
+    <ul>
+      <li>Kontrol listelerindeki maddeler, eklediğin veya kaldırdığın maddeler ve kendi kategorinin adı</li>
+      <li>Hangi maddeleri ne zaman işaretlediğin ve son tam kontrol zamanı</li>
+      <li>Tema, dil, ses efekti ve hatırlatıcı ayarların</li>
+    </ul>
+    <p>Uygulamayı sildiğinde bu bilgiler de silinir. Telefonunun kendi yedekleme özelliği açıksa (örneğin Android’in Google hesabına otomatik yedeklemesi), bu bilgiler cihaz yedeğine dahil olabilir; bu yedekleme Google veya Apple tarafından, senin hesabın ve ayarların doğrultusunda yapılır.</p>
+
+    <h2>Bildirimler</h2>
+    <p>“Çıkınca hatırlat” veya “Günlük hatırlatma” özelliklerini açarsan, Uygulama işaretlenmemiş maddeler için telefonunda yerel bildirimler planlar. Bu bildirimler tamamen cihazında oluşturulur; bildirim içeriği veya kontrol listen herhangi bir sunucuya gönderilmez. Bildirim izni isteğe bağlıdır; hatırlatıcıları Uygulama’nın Ayarlar bölümünden, bildirim iznini de telefonunun ayarlarından istediğin zaman kapatabilirsin.</p>
+
+    <h2>Toplamadığımız bilgiler</h2>
+    <p>Uygulama hesap oluşturmanı istemez. Adın, e-posta adresin, telefon numaran, konumun, rehberin, fotoğrafların veya mikrofonun gibi kişisel bilgilere erişmez ve bunları toplamaz. Kendi analiz veya takip sistemimiz yoktur.</p>
+
+    <h2>Reklamlar (Google AdMob)</h2>
+    <p>Uygulama ücretsizdir ve Google’ın reklam hizmeti AdMob aracılığıyla ekranın altında banner reklam gösterir. Reklamların gösterilebilmesi ve ölçülebilmesi için Google şu bilgileri toplayabilir ve işleyebilir:</p>
+    <ul>
+      <li>Cihazının reklam kimliği (Android Reklam Kimliği veya iOS IDFA, izin verdiysen)</li>
+      <li>IP adresi ve yaklaşık konum (IP adresinden tahmin edilen ülke/şehir düzeyinde)</li>
+      <li>Cihaz modeli, işletim sistemi ve dil gibi teknik bilgiler</li>
+      <li>Reklamlarla etkileşimin (gösterim ve tıklama bilgileri)</li>
+    </ul>
+    <p>Bu veriler doğrudan Google tarafından, Google’ın kendi politikalarına göre işlenir; bize seni kişisel olarak tanımlayan bir bilgi ulaşmaz. Ayrıntılar için: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google’ın iş ortaklarının sitelerini veya uygulamalarını kullandığınızda verileri nasıl kullandığı</a>.</p>
+
+    <h2>Onay ve takip izni</h2>
+    <ul>
+      <li><strong>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre:</strong> Bu bölgelerdeki kullanıcılara, Google’ın onay yönetim aracıyla kişiselleştirilmiş reklamlar için onay formu gösterilir. Onay vermezsen yalnızca kişiselleştirilmemiş reklamlar gösterilir.</li>
+      <li><strong>iOS:</strong> Uygulama, reklam kimliğine erişmek için Apple’ın “Uygulama Takip Şeffaflığı” izni ister. İzin vermesen de Uygulama’yı tam olarak kullanabilirsin; bu durumda daha az kişiselleştirilmiş reklamlar görürsün.</li>
+      <li><strong>Android:</strong> Reklam kimliğini telefonunun Ayarlar &gt; Google &gt; Reklamlar (veya Gizlilik &gt; Reklamlar) bölümünden sıfırlayabilir ya da silebilirsin.</li>
+    </ul>
+
+    <h2>Çocuklar</h2>
+    <p>Uygulama genel kullanıcılar içindir ve 13 yaşından küçük çocuklara yönelik değildir. Bu yaş grubundan bilerek bilgi toplamayız.</p>
+
+    <h2>Hakların</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli olduğu durumlarda Avrupa Genel Veri Koruma Tüzüğü (GDPR) kapsamında haklarına sahipsin. Biz kişisel verini saklamadığımız için, cihazındaki bilgileri Uygulama’yı silerek kaldırabilirsin. Reklam verileriyle ilgili taleplerin için Google’ın gizlilik araçlarını kullanabilir veya bizimle iletişime geçebilirsin.</p>
+
+    <h2>Değişiklikler</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayınlanır ve üstteki tarih değişir.</p>
+
+    <h2>İletişim</h2>
+    <p>Sorun veya talebin için: <a href="mailto:gexan8@gmail.com">gexan8@gmail.com</a><br>Geliştirici: XanApps (Gökhan Eksan) – <a href="https://xanapps.com" target="_blank" rel="noopener">xanapps.com</a></p>
+  </main>
+
+  <footer>© 2026 XanApps</footer>
+</div>
+</body>
+</html>

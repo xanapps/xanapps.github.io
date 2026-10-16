@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Политика конфиденциальности – Astro</title>
+<meta name="description" content="Astro uygulamasının gizlilik politikası / Privacy policy for the Astro app by XanApps.">
+<link rel="alternate" hreflang="tr" href="https://xanapps.com/astro/gizlilik/">
+<link rel="alternate" hreflang="en" href="https://xanapps.com/astro/privacy/">
+<link rel="alternate" hreflang="es" href="https://xanapps.com/astro/privacy-es/">
+<link rel="alternate" hreflang="pt" href="https://xanapps.com/astro/privacy-pt/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --panel: #ffffff;
+    --ink: #15181d;
+    --muted: #5d6874;
+    --accent: #a85a1c;
+    --accent-soft: #f2a660;
+    --rose: #9e5a66;
+    --rule: #e3e7eb;
+    --glow-a: rgba(242,166,96,0.28);
+    --glow-b: rgba(199,216,223,0.6);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171b;
+      --panel: #1d2126;
+      --ink: #f1f3f5;
+      --muted: #a3adb5;
+      --accent: #f5b274;
+      --accent-soft: #f5b274;
+      --rose: #e3aeb6;
+      --rule: #2b3037;
+      --glow-a: rgba(245,178,116,0.12);
+      --glow-b: rgba(43,58,66,0.7);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(40rem 26rem at -10% -8%, var(--glow-b), transparent 70%),
+      radial-gradient(30rem 22rem at 110% 18%, var(--glow-a), transparent 70%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--ink);
+    font: 500 16.5px/1.7 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+
+  header { margin-bottom: 2rem; }
+  .eyebrow {
+    margin: 0 0 .4rem;
+    color: var(--accent);
+    font: 800 .78rem/1 "Manrope", sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font: 700 clamp(2.1rem, 8vw, 2.8rem)/1.1 "Fraunces", Georgia, serif;
+    letter-spacing: -.01em;
+  }
+  .tagline {
+    margin: .5rem 0 0;
+    color: var(--rose);
+    font: italic 600 1.05rem/1.4 "Fraunces", Georgia, serif;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-top: 1.5rem;
+  }
+  .date { margin: 0; color: var(--muted); font-size: .9rem; }
+  .switch {
+    font-weight: 800;
+    font-size: .88rem;
+    text-decoration: none;
+    color: var(--ink);
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+  }
+
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 6px 24px rgba(20,24,29,.06);
+  }
+  .summary strong { color: var(--accent); }
+  .summary p { margin: 0; }
+
+  h2 {
+    font: 700 1.3rem/1.3 "Fraunces", Georgia, serif;
+    margin: 2.2rem 0 .5rem;
+  }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  li::marker { color: var(--accent-soft); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, .switch:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+    text-align: center;
+  }
+  .langs { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .switch[aria-current] { border-color: var(--accent-soft); color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Политика конфиденциальности</p>
+    <h1>Astro ✨</h1>
+    <p class="tagline">Карта неба в вашем кармане</p>
+    <div class="meta">
+      <p class="date">Последнее обновление: 16 октября 2026 г.</p>
+      <div class="langs">
+        <a class="switch" href="/astro/gizlilik/" hreflang="tr" lang="tr">Türkçe</a>
+        <a class="switch" href="/astro/privacy/" hreflang="en" lang="en">English</a>
+        <a class="switch" href="/astro/privacy-es/" hreflang="es" lang="es">Español</a>
+        <a class="switch" href="/astro/privacy-pt/" hreflang="pt" lang="pt">Português</a>
+        <a class="switch" href="/astro/privacy-ru/" hreflang="ru" lang="ru" aria-current="page">Русский</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <p><strong>Коротко:</strong> Приложение не требует учётной записи и не отправляет нам введённые вами данные рождения. Все карты рассчитываются на вашем телефоне, и сохранённые карты тоже остаются на телефоне. Города сначала ищутся в списке, хранящемся на телефоне; только если вы нажмёте «Искать онлайн», введённый текст отправляется в Wikidata. Рекламу в приложении показывает Google AdMob; Google обрабатывает некоторые данные устройства для рекламы согласно своей политике.</p>
+    </div>
+
+    <p>Эта политика объясняет, какую информацию и как использует мобильное приложение «Astro» («Приложение»), разработанное XanApps (Gökhan Eksan).</p>
+
+    <h2>Данные, которые вы вводите</h2>
+    <p>Чтобы рассчитать натальную карту, синастрию, композит, транзиты, Solar Return или Lunar Return, вы вводите имя (необязательно), дату, время и место рождения одного или двух человек, а при необходимости — дату и место для транзита или возвращения. Приложение использует эти данные только для расчёта карт; все вычисления выполняются на вашем устройстве. Данные не отправляются ни нам, ни на какой-либо наш сервер.</p>
+    <p>Если вы вводите данные другого человека (например, партнёра или друга), убедитесь, пожалуйста, что он не против.</p>
+
+    <h2>Данные, хранящиеся на устройстве</h2>
+    <p>Следующие данные хранятся только в памяти вашего устройства и не отправляются ни нам, ни на другие серверы:</p>
+    <ul>
+      <li>Карты, которые вы решили сохранить: имена, данные рождения и настройки карты</li>
+      <li>Выбранный язык</li>
+    </ul>
+    <p>Если вы не сохраняете карту, данные формы не хранятся. Сохранённую карту можно удалить в Приложении в любое время; при удалении Приложения все эти данные удаляются. Если на телефоне включено резервное копирование (например, автоматическое резервное копирование Android в аккаунт Google), эти данные могут попасть в резервную копию; её создаёт Google или Apple в соответствии с вашим аккаунтом и настройками.</p>
+
+    <h2>Поиск города (Wikidata)</h2>
+    <p>Когда вы вводите место рождения, город сначала ищется во встроенном в Приложение списке, который хранится на телефоне; этот поиск не использует интернет. Если места нет в списке и вы нажмёте <strong>«Искать онлайн»</strong>, Приложение отправит введённый текст и язык приложения в сервис Wikidata Фонда Викимедиа. Технически при этом до сервиса доходит и ваш IP-адрес. Ваше имя, дата и время рождения и сохранённые карты не отправляются. Сервис работает в соответствии с <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">Политикой конфиденциальности</a> Фонда Викимедиа.</p>
+
+    <h2>Отправка карты</h2>
+    <p>Когда вы нажимаете «Поделиться», изображение карты создаётся на телефоне и передаётся только в то приложение, которое вы выберете в меню «Поделиться» (например, в мессенджер). Нам изображение не отправляется.</p>
+
+    <h2>Выбор языка</h2>
+    <p>При первом запуске Приложение проверяет настройки языка и региона прямо на телефоне, чтобы выбрать язык интерфейса. Эти данные никуда не отправляются.</p>
+
+    <h2>Данные, которые мы не собираем</h2>
+    <p>Приложение не просит создавать учётную запись. Оно не получает доступ к вашему местоположению (GPS), контактам, фотографиям, камере или микрофону. У нас нет собственных систем аналитики или отслеживания.</p>
+
+    <h2>Реклама (Google AdMob)</h2>
+    <p>Приложение бесплатное и при расчёте карты может показать полноэкранную рекламу через рекламный сервис Google AdMob. Для показа и измерения рекламы Google может собирать и обрабатывать:</p>
+    <ul>
+      <li>Рекламный идентификатор устройства (рекламный идентификатор Android или, с вашего разрешения, IDFA на iOS)</li>
+      <li>IP-адрес и приблизительное местоположение (на уровне страны/города, определяемое по IP-адресу)</li>
+      <li>Технические данные: модель устройства, операционная система и язык</li>
+      <li>Ваши взаимодействия с рекламой (показы и нажатия)</li>
+    </ul>
+    <p>Ваши данные рождения и карты не передаются Google. Рекламные данные обрабатываются непосредственно Google согласно его собственным политикам; никакая информация, позволяющая установить вашу личность, к нам не поступает. Подробнее см. <a href="https://policies.google.com/privacy?hl=ru" target="_blank" rel="noopener">Политику конфиденциальности Google</a> и страницу о том, <a href="https://policies.google.com/technologies/partner-sites?hl=ru" target="_blank" rel="noopener">как Google использует информацию с сайтов и из приложений, использующих его сервисы</a>.</p>
+
+    <h2>Согласие и разрешение на отслеживание</h2>
+    <ul>
+      <li><strong>Европейская экономическая зона, Великобритания и Швейцария:</strong> пользователям из этих регионов через инструмент управления согласием Google показывается форма согласия на персонализированную рекламу. Если вы не дадите согласие, будет показываться только неперсонализированная реклама. Изменить выбор можно позже в разделе «Настройки конфиденциальности рекламы» в Настройках Приложения.</li>
+      <li><strong>iOS:</strong> Приложение запрашивает разрешение Apple «Прозрачность отслеживания приложений» для доступа к рекламному идентификатору. Вы можете полноценно пользоваться Приложением и при отказе; реклама будет менее персонализированной.</li>
+      <li><strong>Android:</strong> рекламный идентификатор можно сбросить или удалить в Настройках телефона &gt; Google &gt; Реклама (или Конфиденциальность &gt; Реклама).</li>
+    </ul>
+
+    <h2>Дети</h2>
+    <p>Приложение предназначено для широкой аудитории и не ориентировано на детей младше 13 лет. Мы сознательно не собираем данные лиц этой возрастной группы.</p>
+
+    <h2>Ваши права</h2>
+    <p>У вас есть права в соответствии с законами о защите данных, например Общим регламентом ЕС по защите данных (GDPR), если он применим. Поскольку мы не храним ваши персональные данные, вы можете удалить информацию со своего устройства, удалив сохранённые карты или Приложение. По вопросам рекламных данных вы можете воспользоваться инструментами конфиденциальности Google или связаться с нами.</p>
+
+    <h2>Изменения</h2>
+    <p>Мы можем время от времени обновлять эту политику. Актуальная версия всегда публикуется на этой странице, а дата выше меняется.</p>
+
+    <h2>Контакты</h2>
+    <p>Вопросы и запросы: <a href="mailto:gexan8@gmail.com">gexan8@gmail.com</a><br>Разработчик: XanApps (Gökhan Eksan) – <a href="https://xanapps.com" target="_blank" rel="noopener">xanapps.com</a></p>
+  </main>
+
+  <footer>© 2026 XanApps</footer>
+</div>
+</body>
+</html>

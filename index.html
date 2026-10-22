@@ -442,6 +442,47 @@
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.01ms !important; scroll-behavior:auto !important;}
   }
+
+  /* ORANLAB PROMO */
+  .promo{
+    display:flex;align-items:center;gap:22px;
+    margin:8px 0 8px;
+    padding:20px 24px;
+    border-radius:18px;
+    background:linear-gradient(120deg,#0a2f7a 0%,#0040a8 55%,#0b4fc4 100%);
+    border:1px solid rgba(46,245,138,0.28);
+    box-shadow:0 18px 40px -18px rgba(0,64,168,0.7);
+    color:#fff;text-decoration:none;
+    position:relative;overflow:hidden;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .promo::after{
+    content:'';position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(circle,rgba(46,245,138,0.22),transparent 70%);pointer-events:none;
+  }
+  .promo:hover{transform:translateY(-2px);box-shadow:0 22px 46px -18px rgba(0,64,168,0.85);}
+  .promo-mark{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;letter-spacing:-0.03em;
+    flex-shrink:0;line-height:1;
+  }
+  .promo-mark .lab{color:#2ef58a;}
+  .promo-text{flex:1;min-width:0;}
+  .promo-tag{
+    display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:#0b2a12;background:#2ef58a;border-radius:6px;padding:3px 8px;margin-bottom:6px;
+  }
+  .promo-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;}
+  .promo-sub{font-size:13.5px;color:rgba(255,255,255,0.78);margin-top:3px;}
+  .promo-cta{
+    flex-shrink:0;display:inline-flex;align-items:center;gap:8px;
+    background:#fff;color:#0040a8;font-weight:600;font-size:14px;
+    padding:10px 16px;border-radius:10px;position:relative;z-index:1;
+  }
+  .promo-cta svg{width:14px;height:14px;}
+  @media (max-width:720px){
+    .promo{flex-direction:column;align-items:flex-start;gap:12px;padding:18px;}
+    .promo-cta{align-self:stretch;justify-content:center;}
+  }
 </style>
 </head>
 <body>
@@ -458,6 +499,16 @@
       </div>
     </div>
   </nav>
+
+  <a class="promo" href="http://oranlabanaliz.com" target="_blank" rel="noopener">
+    <div class="promo-mark">Oran<span class="lab">Lab</span></div>
+    <div class="promo-text">
+      <span class="promo-tag" id="t-promo-tag">Yeni site</span>
+      <div class="promo-title" id="t-promo-title">OranLab'in kendi sitesi yayında: oranlabanaliz.com</div>
+      <div class="promo-sub" id="t-promo-sub">Oranlara göre maç analizi — App Store ve Google Play'den indir.</div>
+    </div>
+    <span class="promo-cta"><span id="t-promo-cta">Siteyi ziyaret et</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+  </a>
 
   <section class="hero">
     <div class="eyebrow"><span class="dot"></span><span id="t-eyebrow">xanapps'in uygulamaları</span></div>
@@ -693,6 +744,11 @@
     },
     'neyesem-platforms': { tr: 'Android · iOS', en: 'Android · iOS' },
     'neyesem-cta': { tr: 'Yakında', en: 'Coming soon' },
+
+    'promo-tag': { tr: 'Yeni site', en: 'New site' },
+    'promo-title': { tr: "OranLab'in kendi sitesi yayında: oranlabanaliz.com", en: "OranLab has its own site: oranlabanaliz.com" },
+    'promo-sub': { tr: "Oranlara göre maç analizi — App Store ve Google Play'den indir.", en: 'Odds-based match analysis — get it on the App Store and Google Play.' },
+    'promo-cta': { tr: 'Siteyi ziyaret et', en: 'Visit site' },
 
     'footer-contact': { tr: 'gexan8@gmail.com üzerinden ulaşabilirsiniz', en: 'you can reach me at gexan8@gmail.com' }
   };

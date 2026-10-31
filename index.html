@@ -479,6 +479,19 @@
     padding:10px 16px;border-radius:10px;position:relative;z-index:1;
   }
   .promo-cta svg{width:14px;height:14px;}
+.promo.astro{
+    background:linear-gradient(120deg,#0b1130 0%,#141c46 55%,#1d2860 100%);
+    border:1px solid rgba(233,196,106,0.35);
+    box-shadow:0 18px 40px -18px rgba(29,40,96,0.8);
+  }
+.promo.astro::after{background:radial-gradient(circle,rgba(233,196,106,0.22),transparent 70%);}
+.promo.astro:hover{box-shadow:0 22px 46px -18px rgba(29,40,96,0.95);}
+.promo.astro .promo-tag{color:#2b2208;background:#e9c46a;}
+.promo.astro .promo-cta{color:#141c46;}
+.astro-mark{display:flex;align-items:center;gap:10px;font-size:20px;color:#f7f1e3;}
+.astro-mark svg{width:34px;height:34px;flex-shrink:0;}
+.promo.astro .promo-mark .lab{color:#e9c46a;}
+.promo-logo{width:44px;height:44px;border-radius:11px;flex-shrink:0;display:block;box-shadow:0 0 0 1px rgba(233,196,106,0.6);}
   @media (max-width:720px){
     .promo{flex-direction:column;align-items:flex-start;gap:12px;padding:18px;}
     .promo-cta{align-self:stretch;justify-content:center;}
@@ -508,6 +521,16 @@
       <div class="promo-sub" id="t-promo-sub">Oranlara göre maç analizi — App Store ve Google Play'den indir.</div>
     </div>
     <span class="promo-cta"><span id="t-promo-cta">Siteyi ziyaret et</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+  </a>
+
+  <a class="promo astro" href="https://astrologystarguide.com/" target="_blank" rel="noopener">
+    <div class="promo-mark astro-mark"><svg viewBox="0 0 40 40" fill="none" stroke="#e9c46a" stroke-width="2"><circle cx="20" cy="20" r="17"/><path d="M20 8l2.6 9.4L32 20l-9.4 2.6L20 32l-2.6-9.4L8 20l9.4-2.6z" fill="#f7f1e3" stroke="none"/></svg><span>Astrology <span class="lab">Star</span> Guide</span></div>
+    <div class="promo-text">
+      <span class="promo-tag" id="t-promo2-tag">Web sitesi</span>
+      <div class="promo-title" id="t-promo2-title">Yıldız Rehberi yayında: astrologystarguide.com</div>
+      <div class="promo-sub" id="t-promo2-sub">On farklı astroloji haritasını ücretsiz ve üyeliksiz hesapla.</div>
+    </div>
+    <span class="promo-cta"><span id="t-promo2-cta">Siteyi ziyaret et</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
   </a>
 
   <section class="hero">
@@ -749,6 +772,10 @@
     'promo-title': { tr: "OranLab'in kendi sitesi yayında: oranlabanaliz.com", en: "OranLab has its own site: oranlabanaliz.com" },
     'promo-sub': { tr: "Oranlara göre maç analizi — App Store ve Google Play'den indir.", en: 'Odds-based match analysis — get it on the App Store and Google Play.' },
     'promo-cta': { tr: 'Siteyi ziyaret et', en: 'Visit site' },
+    'promo2-tag': { tr: 'Web sitesi', en: 'Website' },
+    'promo2-title': { tr: 'Yıldız Rehberi yayında: astrologystarguide.com', en: 'Astrology Star Guide is live: astrologystarguide.com' },
+    'promo2-sub': { tr: 'On farklı astroloji haritasını ücretsiz ve üyeliksiz hesapla.', en: 'Calculate ten chart types for free, no sign-up needed.' },
+    'promo2-cta': { tr: 'Siteyi ziyaret et', en: 'Visit site' },
 
     'footer-contact': { tr: 'gexan8@gmail.com üzerinden ulaşabilirsiniz', en: 'you can reach me at gexan8@gmail.com' }
   };

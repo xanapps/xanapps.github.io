@@ -5,7 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gizlilik Politikası – Trianga</title>
 <meta name="description" content="Trianga oyununun gizlilik politikası / Privacy policy for the Trianga game by XanApps.">
+<link rel="alternate" hreflang="tr" href="https://xanapps.com/trianga/gizlilik/">
 <link rel="alternate" hreflang="en" href="https://xanapps.com/trianga/privacy/">
+<link rel="alternate" hreflang="es" href="https://xanapps.com/trianga/privacy-es/">
+<link rel="alternate" hreflang="pt" href="https://xanapps.com/trianga/privacy-pt/">
+<link rel="alternate" hreflang="de" href="https://xanapps.com/trianga/privacy-de/">
+<link rel="alternate" hreflang="fr" href="https://xanapps.com/trianga/privacy-fr/">
+<link rel="alternate" hreflang="it" href="https://xanapps.com/trianga/privacy-it/">
+<link rel="alternate" hreflang="pl" href="https://xanapps.com/trianga/privacy-pl/">
+<link rel="alternate" hreflang="ru" href="https://xanapps.com/trianga/privacy-ru/">
+<link rel="alternate" hreflang="ar" href="https://xanapps.com/trianga/privacy-ar/">
+<link rel="alternate" hreflang="id" href="https://xanapps.com/trianga/privacy-id/">
+<link rel="alternate" hreflang="vi" href="https://xanapps.com/trianga/privacy-vi/">
+<link rel="alternate" hreflang="th" href="https://xanapps.com/trianga/privacy-th/">
+<link rel="alternate" hreflang="hi" href="https://xanapps.com/trianga/privacy-hi/">
+<link rel="alternate" hreflang="ja" href="https://xanapps.com/trianga/privacy-ja/">
+<link rel="alternate" hreflang="ko" href="https://xanapps.com/trianga/privacy-ko/">
+<link rel="alternate" hreflang="zh" href="https://xanapps.com/trianga/privacy-zh/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -121,6 +137,17 @@
     font-size: .9rem;
     text-align: center;
   }
+
+  .langs { position: relative; }
+  .langs summary { list-style: none; cursor: pointer; }
+  .langs summary::-webkit-details-marker { display: none; }
+  .langs ul { position: absolute; inset-inline-end: 0; top: calc(100% + .4rem); z-index: 5; margin: 0; padding: .4rem;
+    list-style: none; background: var(--panel); border: 1px solid var(--rule); border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(20,24,29,.15); display: grid; grid-template-columns: repeat(2, minmax(8.5rem, 1fr)); gap: .1rem; }
+  .langs li { margin: 0; }
+  .langs li::marker { content: none; }
+  .langs a { display: block; padding: .35rem .7rem; border-radius: .6rem; text-decoration: none; color: var(--ink); font-weight: 700; font-size: .9rem; }
+  .langs a:hover, .langs a[aria-current] { background: var(--rule); }
 </style>
 </head>
 <body>
@@ -131,7 +158,28 @@
     <p class="tagline">Lastiği ger, üçgeni kap</p>
     <div class="meta">
       <p class="date">Son güncelleme: 12 Kasım 2026</p>
-      <a class="switch" href="/trianga/privacy/" hreflang="en" lang="en">English</a>
+      <details class="langs">
+        <summary class="switch">🌐 Türkçe</summary>
+        <ul>
+          <li><a href="/trianga/gizlilik/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+          <li><a href="/trianga/privacy/" hreflang="en" lang="en">English</a></li>
+          <li><a href="/trianga/privacy-es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/trianga/privacy-pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/trianga/privacy-de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/trianga/privacy-fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/trianga/privacy-it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/trianga/privacy-pl/" hreflang="pl" lang="pl">Polski</a></li>
+          <li><a href="/trianga/privacy-ru/" hreflang="ru" lang="ru">Русский</a></li>
+          <li><a href="/trianga/privacy-ar/" hreflang="ar" lang="ar">العربية</a></li>
+          <li><a href="/trianga/privacy-id/" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+          <li><a href="/trianga/privacy-vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+          <li><a href="/trianga/privacy-th/" hreflang="th" lang="th">ไทย</a></li>
+          <li><a href="/trianga/privacy-hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+          <li><a href="/trianga/privacy-ja/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="/trianga/privacy-ko/" hreflang="ko" lang="ko">한국어</a></li>
+          <li><a href="/trianga/privacy-zh/" hreflang="zh" lang="zh">简体中文</a></li>
+        </ul>
+      </details>
     </div>
   </header>
 

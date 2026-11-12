@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Polityka prywatności – Trianga</title>
+<meta name="description" content="Trianga oyununun gizlilik politikası / Privacy policy for the Trianga game by XanApps.">
+<link rel="alternate" hreflang="tr" href="https://xanapps.com/trianga/gizlilik/">
+<link rel="alternate" hreflang="en" href="https://xanapps.com/trianga/privacy/">
+<link rel="alternate" hreflang="es" href="https://xanapps.com/trianga/privacy-es/">
+<link rel="alternate" hreflang="pt" href="https://xanapps.com/trianga/privacy-pt/">
+<link rel="alternate" hreflang="de" href="https://xanapps.com/trianga/privacy-de/">
+<link rel="alternate" hreflang="fr" href="https://xanapps.com/trianga/privacy-fr/">
+<link rel="alternate" hreflang="it" href="https://xanapps.com/trianga/privacy-it/">
+<link rel="alternate" hreflang="pl" href="https://xanapps.com/trianga/privacy-pl/">
+<link rel="alternate" hreflang="ru" href="https://xanapps.com/trianga/privacy-ru/">
+<link rel="alternate" hreflang="ar" href="https://xanapps.com/trianga/privacy-ar/">
+<link rel="alternate" hreflang="id" href="https://xanapps.com/trianga/privacy-id/">
+<link rel="alternate" hreflang="vi" href="https://xanapps.com/trianga/privacy-vi/">
+<link rel="alternate" hreflang="th" href="https://xanapps.com/trianga/privacy-th/">
+<link rel="alternate" hreflang="hi" href="https://xanapps.com/trianga/privacy-hi/">
+<link rel="alternate" hreflang="ja" href="https://xanapps.com/trianga/privacy-ja/">
+<link rel="alternate" hreflang="ko" href="https://xanapps.com/trianga/privacy-ko/">
+<link rel="alternate" hreflang="zh" href="https://xanapps.com/trianga/privacy-zh/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f3fb;
+    --panel: #ffffff;
+    --ink: #17142a;
+    --muted: #5f5a78;
+    --accent: #6a45e0;
+    --accent-soft: #ffb21b;
+    --rose: #c46a00;
+    --rule: #e4e0f2;
+    --glow-a: rgba(255,201,40,0.26);
+    --glow-b: rgba(155,123,255,0.30);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15102e;
+      --panel: #1e1745;
+      --ink: #f3f1ff;
+      --muted: #b2aad8;
+      --accent: #b7a3ff;
+      --accent-soft: #ffc928;
+      --rose: #ffc928;
+      --rule: #2e2560;
+      --glow-a: rgba(255,201,40,0.10);
+      --glow-b: rgba(106,69,224,0.35);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(40rem 26rem at -10% -8%, var(--glow-b), transparent 70%),
+      radial-gradient(30rem 22rem at 110% 18%, var(--glow-a), transparent 70%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--ink);
+    font: 500 16.5px/1.7 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+
+  header { margin-bottom: 2rem; }
+  .eyebrow {
+    margin: 0 0 .4rem;
+    color: var(--accent);
+    font: 800 .78rem/1 "Manrope", sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font: 700 clamp(2.1rem, 8vw, 2.8rem)/1.1 "Fraunces", Georgia, serif;
+    letter-spacing: -.01em;
+  }
+  .tagline {
+    margin: .5rem 0 0;
+    color: var(--rose);
+    font: italic 600 1.05rem/1.4 "Fraunces", Georgia, serif;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-top: 1.5rem;
+  }
+  .date { margin: 0; color: var(--muted); font-size: .9rem; }
+  .switch {
+    font-weight: 800;
+    font-size: .88rem;
+    text-decoration: none;
+    color: var(--ink);
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+  }
+
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 6px 24px rgba(20,24,29,.06);
+  }
+  .summary strong { color: var(--accent); }
+  .summary p { margin: 0; }
+
+  h2 {
+    font: 700 1.3rem/1.3 "Fraunces", Georgia, serif;
+    margin: 2.2rem 0 .5rem;
+  }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  li::marker { color: var(--accent-soft); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, .switch:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .langs { position: relative; }
+  .langs summary { list-style: none; cursor: pointer; }
+  .langs summary::-webkit-details-marker { display: none; }
+  .langs ul { position: absolute; inset-inline-end: 0; top: calc(100% + .4rem); z-index: 5; margin: 0; padding: .4rem;
+    list-style: none; background: var(--panel); border: 1px solid var(--rule); border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(20,24,29,.15); display: grid; grid-template-columns: repeat(2, minmax(8.5rem, 1fr)); gap: .1rem; }
+  .langs li { margin: 0; }
+  .langs li::marker { content: none; }
+  .langs a { display: block; padding: .35rem .7rem; border-radius: .6rem; text-decoration: none; color: var(--ink); font-weight: 700; font-size: .9rem; }
+  .langs a:hover, .langs a[aria-current] { background: var(--rule); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Polityka prywatności</p>
+    <h1>Trianga 🔺</h1>
+    <p class="tagline">Naciągnij gumkę, zdobądź trójkąt</p>
+    <div class="meta">
+      <p class="date">Ostatnia aktualizacja: 12 listopada 2026</p>
+      <details class="langs">
+        <summary class="switch">🌐 Polski</summary>
+        <ul>
+          <li><a href="/trianga/gizlilik/" hreflang="tr" lang="tr">Türkçe</a></li>
+          <li><a href="/trianga/privacy/" hreflang="en" lang="en">English</a></li>
+          <li><a href="/trianga/privacy-es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/trianga/privacy-pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/trianga/privacy-de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/trianga/privacy-fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/trianga/privacy-it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/trianga/privacy-pl/" hreflang="pl" lang="pl" aria-current="page">Polski</a></li>
+          <li><a href="/trianga/privacy-ru/" hreflang="ru" lang="ru">Русский</a></li>
+          <li><a href="/trianga/privacy-ar/" hreflang="ar" lang="ar">العربية</a></li>
+          <li><a href="/trianga/privacy-id/" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+          <li><a href="/trianga/privacy-vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+          <li><a href="/trianga/privacy-th/" hreflang="th" lang="th">ไทย</a></li>
+          <li><a href="/trianga/privacy-hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+          <li><a href="/trianga/privacy-ja/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="/trianga/privacy-ko/" hreflang="ko" lang="ko">한국어</a></li>
+          <li><a href="/trianga/privacy-zh/" hreflang="zh" lang="zh">简体中文</a></li>
+        </ul>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <p><strong>W skrócie:</strong> Trianga nie wymaga konta i nie zbiera informacji o Tobie, aby wysłać je do nas. Profil, postępy, statystyki, ustawienia i niedokończona gra zostają w Twoim telefonie. Reklamy w grze wyświetla Google AdMob, a Google przetwarza niektóre dane urządzenia na potrzeby reklam zgodnie z własną polityką.</p>
+    </div>
+
+    <p>Ta polityka wyjaśnia, jakie informacje wykorzystuje gra mobilna „Trianga” („Aplikacja”) stworzona przez XanApps (Gökhan Eksan) i w jaki sposób.</p>
+
+    <h2>Informacje zapisane na urządzeniu</h2>
+    <p>Poniższe dane są przechowywane wyłącznie w pamięci urządzenia i nigdy nie są wysyłane do nas ani na inne serwery:</p>
+    <ul>
+      <li>Twoja nazwa gracza (jeśli ją wpisałeś) i wybrany awatar</li>
+      <li>Poziom, punkty (XP), puchary, podpowiedzi, zadania, seria nagród dnia i odblokowane motywy</li>
+      <li>Statystyki gry i ruchy niedokończonej gry</li>
+      <li>Ustawienia dźwięku, wibracji, języka, motywu i gry</li>
+    </ul>
+    <p>Usunięcie Aplikacji usuwa te informacje. Jeśli kopia zapasowa telefonu jest włączona (np. automatyczna kopia Androida na koncie Google), mogą one się w niej znaleźć; kopię tworzy Google lub Apple zgodnie z Twoim kontem i ustawieniami.</p>
+
+    <h2>Aktualizacje Aplikacji</h2>
+    <p>Aby drobne poprawki docierały bez czekania na aktualizację w sklepie, Aplikacja przy uruchomieniu wysyła zapytanie do serwera aktualizacji Expo (EAS Update). Zawiera ono tylko dane techniczne: platformę (Android lub iOS), wersję aplikacji i środowiska, kanał aktualizacji oraz losowy identyfikator instalacji tworzony podczas instalacji. Identyfikator ten nie jest powiązany z Twoim imieniem, e-mailem, numerem telefonu ani identyfikatorem reklamowym, nie identyfikuje Cię i zmienia się po ponownej instalacji. Twój adres IP również trafia do serwera jako techniczna część zapytania. Dane gry nie są dołączane. Expo przetwarza te dane w naszym imieniu wyłącznie w celu dostarczania aktualizacji.</p>
+
+    <h2>Informacje, których nie zbieramy</h2>
+    <p>Aplikacja nie wymaga zakładania konta i nie łączy Cię z innymi graczami przez internet. Przeciwnicy komputerowi działają w całości na Twoim telefonie. Nie uzyskuje dostępu do danych osobowych takich jak imię, e-mail, numer telefonu, lokalizacja, kontakty, zdjęcia czy mikrofon. Nie mamy własnego systemu analityki ani śledzenia.</p>
+
+    <h2>Reklamy (Google AdMob)</h2>
+    <p>Aplikacja jest bezpłatna i wyświetla reklamy przez AdMob, usługę reklamową Google: reklamy z nagrodą, które sam wybierasz (np. po dodatkową podpowiedź lub podwojenie nagrody), oraz od czasu do czasu reklamę pełnoekranową po zakończeniu gry. Podczas gry reklamy nie są wyświetlane. Aby wyświetlać i mierzyć reklamy, Google może zbierać i przetwarzać:</p>
+    <ul>
+      <li>Identyfikator reklamowy urządzenia (identyfikator reklamowy Androida lub IDFA w iOS, jeśli na to pozwolisz)</li>
+      <li>Adres IP i przybliżoną lokalizację (kraj/miasto, ustaloną na podstawie IP)</li>
+      <li>Dane techniczne, takie jak model urządzenia, system i język</li>
+      <li>Twoje interakcje z reklamami (wyświetlenia, obejrzenia i kliknięcia)</li>
+    </ul>
+    <p>Te dane przetwarza bezpośrednio Google zgodnie z własnymi zasadami; nie docierają do nas informacje pozwalające Cię zidentyfikować. Szczegóły: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Polityka prywatności Google</a> oraz <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Jak Google wykorzystuje informacje z witryn i aplikacji korzystających z jego usług</a>.</p>
+
+    <h2>Zgoda i pozwolenie na śledzenie</h2>
+    <ul>
+      <li><strong>Europejski Obszar Gospodarczy, Wielka Brytania i Szwajcaria:</strong> za pomocą narzędzia Google wyświetlany jest formularz zgody na reklamy spersonalizowane. Bez zgody wyświetlane są tylko reklamy niespersonalizowane. Wybór możesz zmienić w każdej chwili w „Preferencjach reklam” w Ustawieniach Aplikacji.</li>
+      <li><strong>iOS:</strong> Aplikacja prosi o pozwolenie Apple „Przejrzystość śledzenia w aplikacjach”, aby uzyskać dostęp do identyfikatora reklamowego. Możesz w pełni korzystać z Aplikacji nawet po odmowie; reklamy będą mniej spersonalizowane.</li>
+      <li><strong>Android:</strong> identyfikator reklamowy możesz zresetować lub usunąć w Ustawienia &gt; Google &gt; Reklamy (lub Prywatność &gt; Reklamy).</li>
+    </ul>
+
+    <h2>Dzieci</h2>
+    <p>Aplikacja to gra rodzinna dla wszystkich, ale nie jest skierowana specjalnie do dzieci poniżej 13 lat. Nie zbieramy świadomie danych tej grupy wiekowej. Reklamy są ograniczone do treści odpowiednich dla rodzin (PG).</p>
+
+    <h2>Twoje prawa</h2>
+    <p>Przysługują Ci prawa wynikające z tureckiej ustawy nr 6698 o ochronie danych osobowych (KVKK) oraz, w stosownych przypadkach, z unijnego ogólnego rozporządzenia o ochronie danych (RODO). Ponieważ nie przechowujemy Twoich danych osobowych, możesz usunąć informacje z urządzenia, usuwając Aplikację. W sprawie danych reklamowych skorzystaj z narzędzi prywatności Google lub skontaktuj się z nami.</p>
+
+    <h2>Zmiany</h2>
+    <p>Możemy od czasu do czasu aktualizować tę politykę. Aktualna wersja jest zawsze publikowana na tej stronie, a data powyżej się zmienia.</p>
+
+    <h2>Kontakt</h2>
+    <p>Pytania lub prośby: <a href="mailto:gexan8@gmail.com">gexan8@gmail.com</a> · Twórca: XanApps (Gökhan Eksan) – <a href="https://xanapps.com" target="_blank" rel="noopener">xanapps.com</a></p>
+  </main>
+
+  <footer>© 2026 XanApps</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chính sách quyền riêng tư – Trianga</title>
+<meta name="description" content="Trianga oyununun gizlilik politikası / Privacy policy for the Trianga game by XanApps.">
+<link rel="alternate" hreflang="tr" href="https://xanapps.com/trianga/gizlilik/">
+<link rel="alternate" hreflang="en" href="https://xanapps.com/trianga/privacy/">
+<link rel="alternate" hreflang="es" href="https://xanapps.com/trianga/privacy-es/">
+<link rel="alternate" hreflang="pt" href="https://xanapps.com/trianga/privacy-pt/">
+<link rel="alternate" hreflang="de" href="https://xanapps.com/trianga/privacy-de/">
+<link rel="alternate" hreflang="fr" href="https://xanapps.com/trianga/privacy-fr/">
+<link rel="alternate" hreflang="it" href="https://xanapps.com/trianga/privacy-it/">
+<link rel="alternate" hreflang="pl" href="https://xanapps.com/trianga/privacy-pl/">
+<link rel="alternate" hreflang="ru" href="https://xanapps.com/trianga/privacy-ru/">
+<link rel="alternate" hreflang="ar" href="https://xanapps.com/trianga/privacy-ar/">
+<link rel="alternate" hreflang="id" href="https://xanapps.com/trianga/privacy-id/">
+<link rel="alternate" hreflang="vi" href="https://xanapps.com/trianga/privacy-vi/">
+<link rel="alternate" hreflang="th" href="https://xanapps.com/trianga/privacy-th/">
+<link rel="alternate" hreflang="hi" href="https://xanapps.com/trianga/privacy-hi/">
+<link rel="alternate" hreflang="ja" href="https://xanapps.com/trianga/privacy-ja/">
+<link rel="alternate" hreflang="ko" href="https://xanapps.com/trianga/privacy-ko/">
+<link rel="alternate" hreflang="zh" href="https://xanapps.com/trianga/privacy-zh/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f3fb;
+    --panel: #ffffff;
+    --ink: #17142a;
+    --muted: #5f5a78;
+    --accent: #6a45e0;
+    --accent-soft: #ffb21b;
+    --rose: #c46a00;
+    --rule: #e4e0f2;
+    --glow-a: rgba(255,201,40,0.26);
+    --glow-b: rgba(155,123,255,0.30);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15102e;
+      --panel: #1e1745;
+      --ink: #f3f1ff;
+      --muted: #b2aad8;
+      --accent: #b7a3ff;
+      --accent-soft: #ffc928;
+      --rose: #ffc928;
+      --rule: #2e2560;
+      --glow-a: rgba(255,201,40,0.10);
+      --glow-b: rgba(106,69,224,0.35);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(40rem 26rem at -10% -8%, var(--glow-b), transparent 70%),
+      radial-gradient(30rem 22rem at 110% 18%, var(--glow-a), transparent 70%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--ink);
+    font: 500 16.5px/1.7 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+
+  header { margin-bottom: 2rem; }
+  .eyebrow {
+    margin: 0 0 .4rem;
+    color: var(--accent);
+    font: 800 .78rem/1 "Manrope", sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font: 700 clamp(2.1rem, 8vw, 2.8rem)/1.1 "Fraunces", Georgia, serif;
+    letter-spacing: -.01em;
+  }
+  .tagline {
+    margin: .5rem 0 0;
+    color: var(--rose);
+    font: italic 600 1.05rem/1.4 "Fraunces", Georgia, serif;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-top: 1.5rem;
+  }
+  .date { margin: 0; color: var(--muted); font-size: .9rem; }
+  .switch {
+    font-weight: 800;
+    font-size: .88rem;
+    text-decoration: none;
+    color: var(--ink);
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+  }
+
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 6px 24px rgba(20,24,29,.06);
+  }
+  .summary strong { color: var(--accent); }
+  .summary p { margin: 0; }
+
+  h2 {
+    font: 700 1.3rem/1.3 "Fraunces", Georgia, serif;
+    margin: 2.2rem 0 .5rem;
+  }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  li::marker { color: var(--accent-soft); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, .switch:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .langs { position: relative; }
+  .langs summary { list-style: none; cursor: pointer; }
+  .langs summary::-webkit-details-marker { display: none; }
+  .langs ul { position: absolute; inset-inline-end: 0; top: calc(100% + .4rem); z-index: 5; margin: 0; padding: .4rem;
+    list-style: none; background: var(--panel); border: 1px solid var(--rule); border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(20,24,29,.15); display: grid; grid-template-columns: repeat(2, minmax(8.5rem, 1fr)); gap: .1rem; }
+  .langs li { margin: 0; }
+  .langs li::marker { content: none; }
+  .langs a { display: block; padding: .35rem .7rem; border-radius: .6rem; text-decoration: none; color: var(--ink); font-weight: 700; font-size: .9rem; }
+  .langs a:hover, .langs a[aria-current] { background: var(--rule); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Chính sách quyền riêng tư</p>
+    <h1>Trianga 🔺</h1>
+    <p class="tagline">Căng dây thun, giành tam giác</p>
+    <div class="meta">
+      <p class="date">Cập nhật lần cuối: 12 tháng 11 năm 2026</p>
+      <details class="langs">
+        <summary class="switch">🌐 Tiếng Việt</summary>
+        <ul>
+          <li><a href="/trianga/gizlilik/" hreflang="tr" lang="tr">Türkçe</a></li>
+          <li><a href="/trianga/privacy/" hreflang="en" lang="en">English</a></li>
+          <li><a href="/trianga/privacy-es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/trianga/privacy-pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/trianga/privacy-de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/trianga/privacy-fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/trianga/privacy-it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/trianga/privacy-pl/" hreflang="pl" lang="pl">Polski</a></li>
+          <li><a href="/trianga/privacy-ru/" hreflang="ru" lang="ru">Русский</a></li>
+          <li><a href="/trianga/privacy-ar/" hreflang="ar" lang="ar">العربية</a></li>
+          <li><a href="/trianga/privacy-id/" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+          <li><a href="/trianga/privacy-vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a></li>
+          <li><a href="/trianga/privacy-th/" hreflang="th" lang="th">ไทย</a></li>
+          <li><a href="/trianga/privacy-hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+          <li><a href="/trianga/privacy-ja/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="/trianga/privacy-ko/" hreflang="ko" lang="ko">한국어</a></li>
+          <li><a href="/trianga/privacy-zh/" hreflang="zh" lang="zh">简体中文</a></li>
+        </ul>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <p><strong>Tóm tắt:</strong> Trianga không yêu cầu tài khoản và không thu thập thông tin về bạn để gửi cho chúng tôi. Hồ sơ, tiến trình, thống kê, cài đặt và ván chơi dở đều ở lại trên điện thoại của bạn. Quảng cáo trong game do Google AdMob hiển thị; Google xử lý một số dữ liệu thiết bị cho quảng cáo theo chính sách riêng.</p>
+    </div>
+
+    <p>Chính sách này giải thích trò chơi di động “Trianga” (“Ứng dụng”) do XanApps (Gökhan Eksan) phát triển sử dụng thông tin nào và như thế nào.</p>
+
+    <h2>Thông tin lưu trên thiết bị của bạn</h2>
+    <p>Những dữ liệu sau chỉ được lưu trong bộ nhớ thiết bị và không bao giờ được gửi cho chúng tôi hay máy chủ nào khác:</p>
+    <ul>
+      <li>Tên người chơi (nếu bạn nhập) và ảnh đại diện đã chọn</li>
+      <li>Cấp độ, điểm (XP), cúp, gợi ý, nhiệm vụ, chuỗi quà hằng ngày và các chủ đề đã mở</li>
+      <li>Thống kê trò chơi và các nước đi của ván chưa xong</li>
+      <li>Cài đặt âm thanh, rung, ngôn ngữ, chủ đề và trò chơi</li>
+    </ul>
+    <p>Xóa Ứng dụng sẽ xóa các thông tin này. Nếu tính năng sao lưu của điện thoại đang bật (ví dụ sao lưu tự động của Android vào tài khoản Google), chúng có thể nằm trong bản sao lưu do Google hoặc Apple thực hiện theo tài khoản và cài đặt của bạn.</p>
+
+    <h2>Cập nhật Ứng dụng</h2>
+    <p>Để nhận các bản sửa lỗi nhỏ mà không cần chờ cập nhật trên cửa hàng, khi mở Ứng dụng sẽ gửi yêu cầu kiểm tra đến máy chủ cập nhật của Expo (EAS Update). Yêu cầu chỉ chứa thông tin kỹ thuật: nền tảng (Android hoặc iOS), phiên bản ứng dụng và môi trường chạy, kênh cập nhật và một mã cài đặt ngẫu nhiên tạo ra khi cài Ứng dụng. Mã này không liên kết với tên, email, số điện thoại hay mã quảng cáo của bạn, không nhận dạng bạn và sẽ đổi nếu bạn cài lại. Địa chỉ IP của bạn cũng đến máy chủ như một phần kỹ thuật của yêu cầu. Dữ liệu trò chơi không được gửi kèm. Expo xử lý thông tin này thay mặt chúng tôi chỉ để cung cấp bản cập nhật.</p>
+
+    <h2>Thông tin chúng tôi không thu thập</h2>
+    <p>Ứng dụng không yêu cầu tạo tài khoản và không kết nối bạn với người chơi khác qua internet. Đối thủ máy chạy hoàn toàn trên điện thoại của bạn. Ứng dụng không truy cập dữ liệu cá nhân như tên, email, số điện thoại, vị trí, danh bạ, ảnh hay micrô. Chúng tôi không có hệ thống phân tích hay theo dõi riêng.</p>
+
+    <h2>Quảng cáo (Google AdMob)</h2>
+    <p>Ứng dụng miễn phí và hiển thị quảng cáo qua AdMob, dịch vụ quảng cáo của Google: quảng cáo có thưởng mà bạn tự chọn xem (ví dụ để nhận thêm gợi ý hoặc nhân đôi phần thưởng) và thỉnh thoảng một quảng cáo toàn màn hình sau khi ván kết thúc. Không có quảng cáo trong lúc chơi. Để hiển thị và đo lường quảng cáo, Google có thể thu thập và xử lý:</p>
+    <ul>
+      <li>Mã quảng cáo của thiết bị (ID quảng cáo Android hoặc IDFA iOS nếu bạn cho phép)</li>
+      <li>Địa chỉ IP và vị trí gần đúng (cấp quốc gia/thành phố, suy ra từ IP)</li>
+      <li>Thông tin kỹ thuật như mẫu thiết bị, hệ điều hành và ngôn ngữ</li>
+      <li>Tương tác của bạn với quảng cáo (lượt hiển thị, lượt xem và nhấp)</li>
+    </ul>
+    <p>Dữ liệu này do Google xử lý trực tiếp theo chính sách của Google; không có thông tin nào nhận dạng bạn được gửi đến chúng tôi. Chi tiết: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính sách quyền riêng tư của Google</a> và <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Cách Google sử dụng thông tin từ các trang web hoặc ứng dụng dùng dịch vụ của Google</a>.</p>
+
+    <h2>Sự đồng ý và quyền theo dõi</h2>
+    <ul>
+      <li><strong>Khu vực Kinh tế Châu Âu, Vương quốc Anh và Thụy Sĩ:</strong> biểu mẫu đồng ý cho quảng cáo cá nhân hóa được hiển thị qua công cụ của Google. Nếu không đồng ý, chỉ quảng cáo không cá nhân hóa được hiển thị. Bạn có thể đổi lựa chọn bất cứ lúc nào trong “Tùy chọn quảng cáo” ở phần Cài đặt của Ứng dụng.</li>
+      <li><strong>iOS:</strong> Ứng dụng xin quyền “Minh bạch theo dõi ứng dụng” của Apple để truy cập mã quảng cáo. Bạn vẫn dùng Ứng dụng đầy đủ dù từ chối; quảng cáo sẽ ít được cá nhân hóa hơn.</li>
+      <li><strong>Android:</strong> bạn có thể đặt lại hoặc xóa ID quảng cáo trong Cài đặt &gt; Google &gt; Quảng cáo (hoặc Quyền riêng tư &gt; Quảng cáo).</li>
+    </ul>
+
+    <h2>Trẻ em</h2>
+    <p>Ứng dụng là trò chơi gia đình cho mọi người nhưng không hướng riêng đến trẻ dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin của nhóm tuổi này. Quảng cáo được giới hạn ở nội dung phù hợp với gia đình (PG).</p>
+
+    <h2>Quyền của bạn</h2>
+    <p>Bạn có các quyền theo Luật Bảo vệ Dữ liệu Cá nhân số 6698 của Thổ Nhĩ Kỳ (KVKK) và, khi áp dụng, Quy định Chung về Bảo vệ Dữ liệu của EU (GDPR). Vì chúng tôi không lưu dữ liệu cá nhân của bạn, bạn có thể xóa thông tin trên thiết bị bằng cách xóa Ứng dụng. Với yêu cầu liên quan đến dữ liệu quảng cáo, hãy dùng công cụ quyền riêng tư của Google hoặc liên hệ chúng tôi.</p>
+
+    <h2>Thay đổi</h2>
+    <p>Chúng tôi có thể cập nhật chính sách này theo thời gian. Phiên bản hiện hành luôn được đăng trên trang này và ngày ở trên sẽ thay đổi.</p>
+
+    <h2>Liên hệ</h2>
+    <p>Câu hỏi hoặc yêu cầu: <a href="mailto:gexan8@gmail.com">gexan8@gmail.com</a> · Nhà phát triển: XanApps (Gökhan Eksan) – <a href="https://xanapps.com" target="_blank" rel="noopener">xanapps.com</a></p>
+  </main>
+
+  <footer>© 2026 XanApps</footer>
+</div>
+</body>
+</html>

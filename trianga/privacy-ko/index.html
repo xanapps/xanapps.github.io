@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>개인정보 처리방침 – Trianga</title>
+<meta name="description" content="Trianga oyununun gizlilik politikası / Privacy policy for the Trianga game by XanApps.">
+<link rel="alternate" hreflang="tr" href="https://xanapps.com/trianga/gizlilik/">
+<link rel="alternate" hreflang="en" href="https://xanapps.com/trianga/privacy/">
+<link rel="alternate" hreflang="es" href="https://xanapps.com/trianga/privacy-es/">
+<link rel="alternate" hreflang="pt" href="https://xanapps.com/trianga/privacy-pt/">
+<link rel="alternate" hreflang="de" href="https://xanapps.com/trianga/privacy-de/">
+<link rel="alternate" hreflang="fr" href="https://xanapps.com/trianga/privacy-fr/">
+<link rel="alternate" hreflang="it" href="https://xanapps.com/trianga/privacy-it/">
+<link rel="alternate" hreflang="pl" href="https://xanapps.com/trianga/privacy-pl/">
+<link rel="alternate" hreflang="ru" href="https://xanapps.com/trianga/privacy-ru/">
+<link rel="alternate" hreflang="ar" href="https://xanapps.com/trianga/privacy-ar/">
+<link rel="alternate" hreflang="id" href="https://xanapps.com/trianga/privacy-id/">
+<link rel="alternate" hreflang="vi" href="https://xanapps.com/trianga/privacy-vi/">
+<link rel="alternate" hreflang="th" href="https://xanapps.com/trianga/privacy-th/">
+<link rel="alternate" hreflang="hi" href="https://xanapps.com/trianga/privacy-hi/">
+<link rel="alternate" hreflang="ja" href="https://xanapps.com/trianga/privacy-ja/">
+<link rel="alternate" hreflang="ko" href="https://xanapps.com/trianga/privacy-ko/">
+<link rel="alternate" hreflang="zh" href="https://xanapps.com/trianga/privacy-zh/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f3fb;
+    --panel: #ffffff;
+    --ink: #17142a;
+    --muted: #5f5a78;
+    --accent: #6a45e0;
+    --accent-soft: #ffb21b;
+    --rose: #c46a00;
+    --rule: #e4e0f2;
+    --glow-a: rgba(255,201,40,0.26);
+    --glow-b: rgba(155,123,255,0.30);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15102e;
+      --panel: #1e1745;
+      --ink: #f3f1ff;
+      --muted: #b2aad8;
+      --accent: #b7a3ff;
+      --accent-soft: #ffc928;
+      --rose: #ffc928;
+      --rule: #2e2560;
+      --glow-a: rgba(255,201,40,0.10);
+      --glow-b: rgba(106,69,224,0.35);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(40rem 26rem at -10% -8%, var(--glow-b), transparent 70%),
+      radial-gradient(30rem 22rem at 110% 18%, var(--glow-a), transparent 70%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--ink);
+    font: 500 16.5px/1.7 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+
+  header { margin-bottom: 2rem; }
+  .eyebrow {
+    margin: 0 0 .4rem;
+    color: var(--accent);
+    font: 800 .78rem/1 "Manrope", sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font: 700 clamp(2.1rem, 8vw, 2.8rem)/1.1 "Fraunces", Georgia, serif;
+    letter-spacing: -.01em;
+  }
+  .tagline {
+    margin: .5rem 0 0;
+    color: var(--rose);
+    font: italic 600 1.05rem/1.4 "Fraunces", Georgia, serif;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-top: 1.5rem;
+  }
+  .date { margin: 0; color: var(--muted); font-size: .9rem; }
+  .switch {
+    font-weight: 800;
+    font-size: .88rem;
+    text-decoration: none;
+    color: var(--ink);
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+  }
+
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 6px 24px rgba(20,24,29,.06);
+  }
+  .summary strong { color: var(--accent); }
+  .summary p { margin: 0; }
+
+  h2 {
+    font: 700 1.3rem/1.3 "Fraunces", Georgia, serif;
+    margin: 2.2rem 0 .5rem;
+  }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  li::marker { color: var(--accent-soft); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, .switch:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .langs { position: relative; }
+  .langs summary { list-style: none; cursor: pointer; }
+  .langs summary::-webkit-details-marker { display: none; }
+  .langs ul { position: absolute; inset-inline-end: 0; top: calc(100% + .4rem); z-index: 5; margin: 0; padding: .4rem;
+    list-style: none; background: var(--panel); border: 1px solid var(--rule); border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(20,24,29,.15); display: grid; grid-template-columns: repeat(2, minmax(8.5rem, 1fr)); gap: .1rem; }
+  .langs li { margin: 0; }
+  .langs li::marker { content: none; }
+  .langs a { display: block; padding: .35rem .7rem; border-radius: .6rem; text-decoration: none; color: var(--ink); font-weight: 700; font-size: .9rem; }
+  .langs a:hover, .langs a[aria-current] { background: var(--rule); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">개인정보 처리방침</p>
+    <h1>Trianga 🔺</h1>
+    <p class="tagline">고무줄을 걸고, 삼각형을 차지하세요</p>
+    <div class="meta">
+      <p class="date">최종 업데이트: 2026년 11월 12일</p>
+      <details class="langs">
+        <summary class="switch">🌐 한국어</summary>
+        <ul>
+          <li><a href="/trianga/gizlilik/" hreflang="tr" lang="tr">Türkçe</a></li>
+          <li><a href="/trianga/privacy/" hreflang="en" lang="en">English</a></li>
+          <li><a href="/trianga/privacy-es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/trianga/privacy-pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/trianga/privacy-de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/trianga/privacy-fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/trianga/privacy-it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/trianga/privacy-pl/" hreflang="pl" lang="pl">Polski</a></li>
+          <li><a href="/trianga/privacy-ru/" hreflang="ru" lang="ru">Русский</a></li>
+          <li><a href="/trianga/privacy-ar/" hreflang="ar" lang="ar">العربية</a></li>
+          <li><a href="/trianga/privacy-id/" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+          <li><a href="/trianga/privacy-vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+          <li><a href="/trianga/privacy-th/" hreflang="th" lang="th">ไทย</a></li>
+          <li><a href="/trianga/privacy-hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+          <li><a href="/trianga/privacy-ja/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="/trianga/privacy-ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a></li>
+          <li><a href="/trianga/privacy-zh/" hreflang="zh" lang="zh">简体中文</a></li>
+        </ul>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <p><strong>요약:</strong> Trianga는 계정을 요구하지 않으며 사용자에 대한 정보를 수집해 저희에게 보내지 않습니다. 프로필, 진행 상황, 기록, 설정, 진행 중인 게임은 휴대폰에만 저장됩니다. 게임 속 광고는 Google AdMob이 표시하며, Google은 광고를 위해 일부 기기 정보를 자체 정책에 따라 처리합니다.</p>
+    </div>
+
+    <p>이 방침은 XanApps(Gökhan Eksan)가 개발한 모바일 게임 “Trianga”(이하 “앱”)가 어떤 정보를 어떻게 사용하는지 설명합니다.</p>
+
+    <h2>기기에 저장되는 정보</h2>
+    <p>다음 정보는 기기 저장 공간에만 저장되며 저희나 다른 서버로 전송되지 않습니다.</p>
+    <ul>
+      <li>플레이어 이름(입력한 경우)과 선택한 아바타</li>
+      <li>레벨, 포인트(XP), 트로피, 힌트, 미션, 일일 보상 연속 기록, 열린 테마</li>
+      <li>게임 기록과 진행 중인 게임의 수</li>
+      <li>소리, 진동, 언어, 테마, 게임 설정</li>
+    </ul>
+    <p>앱을 삭제하면 이 정보도 삭제됩니다. 휴대폰 백업이 켜져 있으면(예: Google 계정으로의 Android 자동 백업) 이 정보가 백업에 포함될 수 있으며, 백업은 사용자의 계정과 설정에 따라 Google 또는 Apple이 수행합니다.</p>
+
+    <h2>앱 업데이트</h2>
+    <p>스토어 업데이트를 기다리지 않고 작은 수정을 받을 수 있도록, 앱은 실행 시 Expo 업데이트 서버(EAS Update)에 확인 요청을 보냅니다. 요청에는 기술 정보만 들어 있습니다: 플랫폼(Android 또는 iOS), 앱 및 런타임 버전, 업데이트 채널, 설치 시 생성되는 무작위 설치 ID. 이 ID는 이름, 이메일, 전화번호, 광고 ID와 연결되지 않고, 사용자를 식별하지 않으며, 다시 설치하면 새로 바뀝니다. 요청 전달을 위해 IP 주소도 기술적으로 서버에 전달됩니다. 게임 데이터는 포함되지 않습니다. Expo는 업데이트 제공 목적으로만 저희를 대신해 이 정보를 처리합니다.</p>
+
+    <h2>수집하지 않는 정보</h2>
+    <p>앱은 계정 생성을 요구하지 않으며 인터넷으로 다른 플레이어와 연결하지 않습니다. 컴퓨터 상대는 전부 휴대폰 안에서 작동합니다. 이름, 이메일, 전화번호, 위치, 연락처, 사진, 마이크 같은 개인정보에 접근하거나 수집하지 않습니다. 자체 분석이나 추적 시스템도 없습니다.</p>
+
+    <h2>광고(Google AdMob)</h2>
+    <p>앱은 무료이며 Google의 광고 서비스 AdMob을 통해 광고를 표시합니다. 사용자가 직접 선택해 보는 보상형 광고(예: 힌트 추가나 보상 2배)와, 게임이 끝난 뒤 가끔 나오는 전면 광고입니다. 게임 중에는 광고가 표시되지 않습니다. 광고 표시와 측정을 위해 Google은 다음 정보를 수집·처리할 수 있습니다.</p>
+    <ul>
+      <li>기기의 광고 ID(Android 광고 ID 또는 허용한 경우 iOS IDFA)</li>
+      <li>IP 주소와 대략적인 위치(IP로 추정한 국가/도시 수준)</li>
+      <li>기기 모델, 운영체제, 언어 등 기술 정보</li>
+      <li>광고와의 상호작용(노출, 시청, 클릭)</li>
+    </ul>
+    <p>이 데이터는 Google이 자체 정책에 따라 직접 처리하며, 사용자를 식별하는 정보는 저희에게 전달되지 않습니다. 자세한 내용: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a> 및 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 서비스를 사용하는 사이트 또는 앱의 정보를 Google이 사용하는 방법</a>.</p>
+
+    <h2>동의 및 추적 허용</h2>
+    <ul>
+      <li><strong>유럽 경제 지역, 영국, 스위스:</strong> Google의 동의 관리 도구로 맞춤 광고 동의 양식이 표시됩니다. 동의하지 않으면 맞춤형이 아닌 광고만 표시됩니다. 앱 설정의 “광고 설정”에서 언제든지 선택을 바꿀 수 있습니다.</li>
+      <li><strong>iOS:</strong> 앱은 광고 ID에 접근하기 위해 Apple의 “앱 추적 투명성” 허용을 요청합니다. 거부해도 앱을 모두 이용할 수 있으며, 광고 맞춤 정도가 줄어듭니다.</li>
+      <li><strong>Android:</strong> 설정 &gt; Google &gt; 광고(또는 개인정보 보호 &gt; 광고)에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
+    </ul>
+
+    <h2>아동</h2>
+    <p>앱은 누구나 즐길 수 있는 가족 게임이지만 13세 미만 아동을 특별히 대상으로 하지 않습니다. 이 연령대의 정보를 고의로 수집하지 않습니다. 광고는 가족에게 적합한 콘텐츠(PG)로 제한됩니다.</p>
+
+    <h2>사용자의 권리</h2>
+    <p>사용자는 튀르키예 개인정보보호법 제6698호(KVKK) 및 해당하는 경우 EU 일반 개인정보 보호법(GDPR)에 따른 권리를 가집니다. 저희는 개인정보를 보관하지 않으므로 앱을 삭제하면 기기의 정보를 지울 수 있습니다. 광고 데이터 관련 요청은 Google의 개인정보 보호 도구를 이용하거나 저희에게 문의해 주세요.</p>
+
+    <h2>변경</h2>
+    <p>이 방침은 수시로 업데이트될 수 있습니다. 최신 버전은 항상 이 페이지에 게시되며 위의 날짜가 바뀝니다.</p>
+
+    <h2>문의</h2>
+    <p>질문이나 요청: <a href="mailto:gexan8@gmail.com">gexan8@gmail.com</a> · 개발자: XanApps(Gökhan Eksan) – <a href="https://xanapps.com" target="_blank" rel="noopener">xanapps.com</a></p>
+  </main>
+
+  <footer>© 2026 XanApps</footer>
+</div>
+</body>
+</html>

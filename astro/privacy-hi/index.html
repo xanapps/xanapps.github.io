@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>गोपनीयता नीति – Astro</title>
+<meta name="description" content="Astro uygulamasının gizlilik politikası / Privacy policy for the Astro app by XanApps.">
+<link rel="alternate" hreflang="en" href="https://xanapps.com/astro/privacy/">
+<link rel="alternate" hreflang="tr" href="https://xanapps.com/astro/gizlilik/">
+<link rel="alternate" hreflang="es" href="https://xanapps.com/astro/privacy-es/">
+<link rel="alternate" hreflang="pt" href="https://xanapps.com/astro/privacy-pt/">
+<link rel="alternate" hreflang="ru" href="https://xanapps.com/astro/privacy-ru/">
+<link rel="alternate" hreflang="hi" href="https://xanapps.com/astro/privacy-hi/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@500;700;800&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --panel: #ffffff;
+    --ink: #15181d;
+    --muted: #5d6874;
+    --accent: #a85a1c;
+    --accent-soft: #f2a660;
+    --rose: #9e5a66;
+    --rule: #e3e7eb;
+    --glow-a: rgba(242,166,96,0.28);
+    --glow-b: rgba(199,216,223,0.6);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171b;
+      --panel: #1d2126;
+      --ink: #f1f3f5;
+      --muted: #a3adb5;
+      --accent: #f5b274;
+      --accent-soft: #f5b274;
+      --rose: #e3aeb6;
+      --rule: #2b3037;
+      --glow-a: rgba(245,178,116,0.12);
+      --glow-b: rgba(43,58,66,0.7);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(40rem 26rem at -10% -8%, var(--glow-b), transparent 70%),
+      radial-gradient(30rem 22rem at 110% 18%, var(--glow-a), transparent 70%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--ink);
+    font: 500 16.5px/1.7 "Manrope", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+
+  header { margin-bottom: 2rem; }
+  .eyebrow {
+    margin: 0 0 .4rem;
+    color: var(--accent);
+    font: 800 .78rem/1 "Manrope", "Noto Sans Devanagari", sans-serif;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font: 700 clamp(2.1rem, 8vw, 2.8rem)/1.1 "Fraunces", "Noto Serif Devanagari", Georgia, serif;
+    letter-spacing: -.01em;
+  }
+  .tagline {
+    margin: .5rem 0 0;
+    color: var(--rose);
+    font: italic 600 1.05rem/1.4 "Fraunces", "Noto Serif Devanagari", Georgia, serif;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-top: 1.5rem;
+  }
+  .date { margin: 0; color: var(--muted); font-size: .9rem; }
+  .switch {
+    font-weight: 800;
+    font-size: .88rem;
+    text-decoration: none;
+    color: var(--ink);
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+  }
+
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 6px 24px rgba(20,24,29,.06);
+  }
+  .summary strong { color: var(--accent); }
+  .summary p { margin: 0; }
+
+  h2 {
+    font: 700 1.3rem/1.3 "Fraunces", "Noto Serif Devanagari", Georgia, serif;
+    margin: 2.2rem 0 .5rem;
+  }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  li::marker { color: var(--accent-soft); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, .switch:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+    text-align: center;
+  }
+  .langs { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .switch[aria-current] { border-color: var(--accent-soft); color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">गोपनीयता नीति</p>
+    <h1>Astro ✨</h1>
+    <p class="tagline">आपकी कुंडली, आपकी जेब में</p>
+    <div class="meta">
+      <p class="date">अंतिम अपडेट: 19 नवंबर 2026</p>
+      <div class="langs">
+        <a class="switch" href="/astro/gizlilik/" hreflang="tr" lang="tr">Türkçe</a>
+        <a class="switch" href="/astro/privacy/" hreflang="en" lang="en">English</a>
+        <a class="switch" href="/astro/privacy-es/" hreflang="es" lang="es">Español</a>
+        <a class="switch" href="/astro/privacy-pt/" hreflang="pt" lang="pt">Português</a>
+        <a class="switch" href="/astro/privacy-ru/" hreflang="ru" lang="ru">Русский</a>
+        <a class="switch" href="/astro/privacy-hi/" hreflang="hi" lang="hi" aria-current="page">हिन्दी</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <p><strong>संक्षेप में:</strong> ऐप कोई खाता नहीं माँगता और आपके द्वारा दर्ज किया गया जन्म विवरण हमें नहीं भेजता। सभी चार्ट आपके फ़ोन पर ही बनते हैं, और आपके सहेजे गए चार्ट आपके फ़ोन पर ही रहते हैं। शहर पहले आपके फ़ोन में रखी सूची में खोजे जाते हैं; केवल “ऑनलाइन खोजें” दबाने पर ही आपका लिखा टेक्स्ट Wikidata को भेजा जाता है। ऐप में विज्ञापन Google AdMob द्वारा दिखाए जाते हैं; Google विज्ञापन के लिए डिवाइस की कुछ जानकारी अपनी नीति के अनुसार प्रोसेस करता है।</p>
+    </div>
+
+    <p>यह नीति बताती है कि XanApps (Gökhan Eksan) द्वारा विकसित “Astro” मोबाइल ऐप (“ऐप”) कौन-सी जानकारी उपयोग करता है और कैसे।</p>
+
+    <h2>आपके द्वारा दर्ज की गई जानकारी</h2>
+    <p>जन्म कुंडली, सिनेस्ट्री, कम्पोज़िट, गोचर, सोलर रिटर्न या लूनर रिटर्न की गणना के लिए आप एक या दो व्यक्तियों का नाम (वैकल्पिक), जन्म तिथि, जन्म समय और जन्म स्थान, तथा आवश्यकता होने पर गोचर या रिटर्न की तिथि और स्थान दर्ज करते हैं। ऐप इस जानकारी का उपयोग केवल चार्ट की गणना के लिए करता है; सभी गणनाएँ आपके डिवाइस पर होती हैं। यह जानकारी हमें या हमारे किसी सर्वर को नहीं भेजी जाती।</p>
+    <p>यदि आप किसी और का विवरण दर्ज करते हैं (जैसे अपने साथी या मित्र का), तो कृपया सुनिश्चित करें कि उन्हें इससे आपत्ति न हो।</p>
+
+    <h2>आपके डिवाइस पर रखी जाने वाली जानकारी</h2>
+    <p>निम्नलिखित जानकारी केवल आपके डिवाइस के स्टोरेज में रखी जाती है और हमें या किसी अन्य सर्वर को नहीं भेजी जाती:</p>
+    <ul>
+      <li>आपके द्वारा सहेजे गए चार्ट: व्यक्तियों के नाम, जन्म विवरण और चार्ट सेटिंग्स</li>
+      <li>आपकी भाषा सेटिंग</li>
+    </ul>
+    <p>जब तक आप चार्ट नहीं सहेजते, फ़ॉर्म का विवरण संग्रहीत नहीं होता। आप किसी भी सहेजे गए चार्ट को कभी भी ऐप के भीतर से हटा सकते हैं; ऐप हटाने पर यह सारी जानकारी हट जाती है। यदि आपके फ़ोन का अपना बैकअप फ़ीचर चालू है (जैसे Android का आपके Google खाते में स्वचालित बैकअप), तो यह जानकारी आपके डिवाइस बैकअप में शामिल हो सकती है; यह बैकअप Google या Apple द्वारा आपके खाते और सेटिंग्स के अनुसार बनाया जाता है।</p>
+
+    <h2>शहर खोज (Wikidata)</h2>
+    <p>जब आप जन्म स्थान लिखते हैं, तो शहर पहले ऐप में बनी और आपके फ़ोन में रखी सूची में खोजा जाता है; यह खोज ऑनलाइन नहीं होती। यदि स्थान सूची में नहीं है और आप <strong>“ऑनलाइन खोजें”</strong> दबाते हैं, तो ऐप आपका लिखा टेक्स्ट और ऐप की भाषा Wikimedia Foundation की Wikidata सेवा को भेजता है। अनुरोध पहुँचाने के तकनीकी हिस्से के रूप में आपका IP पता भी उस सेवा तक पहुँचता है। आपका नाम, जन्म तिथि और समय, तथा सहेजे गए चार्ट नहीं भेजे जाते। यह सेवा Wikimedia Foundation द्वारा उसकी अपनी <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">गोपनीयता नीति</a> के अंतर्गत चलाई जाती है।</p>
+
+    <h2>चार्ट शेयर करना</h2>
+    <p>जब आप “शेयर करें” दबाते हैं, तो आपके फ़ोन पर चार्ट की एक छवि बनती है और केवल उस ऐप को दी जाती है जिसे आप शेयर मेनू में चुनते हैं (जैसे कोई मैसेजिंग ऐप)। यह छवि हमें नहीं भेजी जाती।</p>
+
+    <h2>भाषा का चुनाव</h2>
+    <p>पहली बार खोलने पर ऐप यह तय करने के लिए कि किस भाषा में खुले, आपके फ़ोन की भाषा और क्षेत्र सेटिंग्स को फ़ोन पर ही जाँचता है। यह जानकारी कहीं नहीं भेजी जाती।</p>
+
+    <h2>जो जानकारी हम एकत्र नहीं करते</h2>
+    <p>ऐप आपसे खाता बनाने के लिए नहीं कहता। यह आपके स्थान (GPS), संपर्कों, फ़ोटो, कैमरा या माइक्रोफ़ोन तक पहुँच नहीं लेता। हमारी अपनी कोई एनालिटिक्स या ट्रैकिंग प्रणाली नहीं है।</p>
+
+    <h2>विज्ञापन (Google AdMob)</h2>
+    <p>ऐप मुफ़्त है और चार्ट की गणना करते समय Google की विज्ञापन सेवा AdMob के माध्यम से पूर्ण-स्क्रीन विज्ञापन दिखा सकता है। विज्ञापन दिखाने और मापने के लिए Google निम्नलिखित जानकारी एकत्र और प्रोसेस कर सकता है:</p>
+    <ul>
+      <li>आपके डिवाइस की विज्ञापन ID (Android Advertising ID, या iOS IDFA यदि आप अनुमति दें)</li>
+      <li>IP पता और अनुमानित स्थान (देश/शहर स्तर, IP पते से निकाला गया)</li>
+      <li>तकनीकी जानकारी जैसे डिवाइस मॉडल, ऑपरेटिंग सिस्टम और भाषा</li>
+      <li>विज्ञापनों के साथ आपकी गतिविधि (दिखाए जाना और क्लिक)</li>
+    </ul>
+    <p>आपके द्वारा दर्ज किया गया जन्म विवरण और आपके चार्ट Google के साथ साझा नहीं किए जाते। विज्ञापन डेटा सीधे Google द्वारा उसकी अपनी नीतियों के अनुसार प्रोसेस किया जाता है; आपकी व्यक्तिगत पहचान करने वाली कोई जानकारी हम तक नहीं पहुँचती। विवरण के लिए <a href="https://policies.google.com/privacy?hl=hi" target="_blank" rel="noopener">Google गोपनीयता नीति</a> और <a href="https://policies.google.com/technologies/partner-sites?hl=hi" target="_blank" rel="noopener">Google अपनी सेवाओं का उपयोग करने वाली साइटों या ऐप्स की जानकारी का उपयोग कैसे करता है</a> देखें।</p>
+
+    <h2>सहमति और ट्रैकिंग अनुमति</h2>
+    <ul>
+      <li><strong>यूरोपीय आर्थिक क्षेत्र, यूनाइटेड किंगडम और स्विट्ज़रलैंड:</strong> इन क्षेत्रों के उपयोगकर्ताओं को Google के सहमति प्रबंधन टूल के माध्यम से व्यक्तिगत विज्ञापनों के लिए सहमति फ़ॉर्म दिखाया जाता है। सहमति न देने पर केवल गैर-व्यक्तिगत विज्ञापन दिखाए जाते हैं। आप बाद में ऐप की सेटिंग्स स्क्रीन में “विज्ञापन गोपनीयता विकल्प” से अपना चुनाव बदल सकते हैं।</li>
+      <li><strong>संयुक्त राज्य अमेरिका:</strong> उपभोक्ता गोपनीयता कानूनों वाले अमेरिकी राज्यों (जैसे कैलिफ़ोर्निया) में, आप Google के गोपनीयता संदेश के माध्यम से लक्षित विज्ञापन के लिए अपनी व्यक्तिगत जानकारी की बिक्री या साझाकरण से बाहर निकल सकते हैं; यह संदेश आप ऐप की सेटिंग्स स्क्रीन में “विज्ञापन गोपनीयता विकल्प” से कभी भी खोल सकते हैं।</li>
+      <li><strong>iOS:</strong> ऐप विज्ञापन ID तक पहुँच के लिए Apple की “App Tracking Transparency” अनुमति माँगता है। अस्वीकार करने पर भी आप ऐप का पूरा उपयोग कर सकते हैं; आपको कम व्यक्तिगत विज्ञापन दिखेंगे।</li>
+      <li><strong>Android:</strong> आप अपने फ़ोन की सेटिंग्स &gt; Google &gt; विज्ञापन (या गोपनीयता &gt; विज्ञापन) में अपनी विज्ञापन ID रीसेट या हटा सकते हैं।</li>
+    </ul>
+
+    <h2>बच्चे</h2>
+    <p>ऐप सामान्य दर्शकों के लिए है और 13 वर्ष से कम आयु के बच्चों के लिए नहीं है। हम जानबूझकर इस आयु वर्ग से कोई जानकारी एकत्र नहीं करते।</p>
+
+    <h2>आपके अधिकार</h2>
+    <p>जहाँ लागू हो, आपको यूरोपीय संघ के सामान्य डेटा संरक्षण विनियमन (GDPR) और भारत के डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 जैसे डेटा संरक्षण कानूनों के अंतर्गत अधिकार प्राप्त हैं। चूँकि हम आपका व्यक्तिगत डेटा संग्रहीत नहीं करते, आप अपने सहेजे गए चार्ट या ऐप को हटाकर अपने डिवाइस की जानकारी हटा सकते हैं। विज्ञापन डेटा से जुड़े अनुरोधों के लिए आप Google के गोपनीयता टूल का उपयोग कर सकते हैं या हमसे संपर्क कर सकते हैं।</p>
+
+    <h2>बदलाव</h2>
+    <p>हम समय-समय पर इस नीति को अपडेट कर सकते हैं। वर्तमान संस्करण हमेशा इसी पेज पर प्रकाशित होता है और ऊपर दी गई तिथि बदल जाती है।</p>
+
+    <h2>संपर्क</h2>
+    <p>प्रश्नों और अनुरोधों के लिए: <a href="mailto:gexan8@gmail.com">gexan8@gmail.com</a><br>डेवलपर: XanApps (Gökhan Eksan) – <a href="https://xanapps.com" target="_blank" rel="noopener">xanapps.com</a></p>
+  </main>
+
+  <footer>© 2026 XanApps</footer>
+</div>
+</body>
+</html>
